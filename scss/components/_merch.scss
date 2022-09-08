@@ -1,0 +1,27 @@
+//Estilo grid merch
+
+.containerMerch {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header header"
+      "figuras figuras figuras figuras"
+      "accesorios accesorios accesorios accesorios"
+      "indumentaria indumentaria indumentaria indumentaria"
+      "footer footer footer footer";
+
+  .header { grid-area: header; }
+  
+  .figuras { grid-area: figuras; }
+  
+  .accesorios { grid-area: accesorios; }
+  
+  .indumentaria { grid-area: indumentaria; }
+  
+  .footer { grid-area: footer; }
+  }
+  
+  

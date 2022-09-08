@@ -1,0 +1,8 @@
+
+$rojo: #FA0034;
+$celeste: #1636F8;
+
+@mixin degrade{
+    background: radial-gradient($rojo, $celeste);
+}
+

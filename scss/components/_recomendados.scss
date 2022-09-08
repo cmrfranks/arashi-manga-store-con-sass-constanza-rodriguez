@@ -1,0 +1,56 @@
+//Estilo grid recomendados
+
+/* Estilo grid Recomendados */
+
+.containerRec {  display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "header header header"
+      "section1 section1 section1"
+      "section2 section2 section2"
+      "section3 section3 section3";
+
+      .header { grid-area: header; }
+  
+      .section1 { grid-area: section1; }
+      
+      .section2 { grid-area: section2; }
+      
+      .section3 { grid-area: section3; }
+  }
+  
+  .containerRec {
+    p{
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    height: 400px;
+    }
+    img{
+        width: 675px;
+        height: 450px;
+        border: 2px solid black;
+        border-radius: 15px;
+        margin: 10px;
+      }
+}
+
+  .recomendacion{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .texto{
+        margin: 10px;
+        padding: 10px;
+        width: 500px;
+        height: 450px;
+        border: 1px solid black;
+        border-radius: 15px;
+        background-color: rgb(34, 31, 31);
+        text-align: justify;
+      }
+  }
+  
+ 
+

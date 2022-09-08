@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Teko:wght@300;400&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.search ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: radial-gradient(#FA0034, #1636F8);
+  border-radius: 10rem;
+  border: 2px solid black; }
+  .search ul li {
+    border-radius: 25px;
+    background-color: black; }
+    .search ul li a {
+      font-family: 'Ubuntu', sans-serif;
+      color: brown;
+      -webkit-text-stroke: 1px crimson;
+      text-decoration: none; }
+
+.lista {
+  margin-left: 25px;
+  margin-right: 25px; }
+  .lista li {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif; }
+
+.containerCatalogo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+  grid-template-areas: "header header header header header" "search search search search search" "shounen shounen shounen shounen shounen" "shoujo shoujo shoujo shoujo shoujo" "seinen seinen seinen seinen seinen" "josei josei josei josei josei" "spokon spokon spokon spokon spokon" "mecha mecha mecha mecha mecha" "isekai isekai isekai isekai isekai" "footer footer footer footer footer"; }
+  .containerCatalogo .header {
+    grid-area: header; }
+  .containerCatalogo .search {
+    grid-area: search; }
+  .containerCatalogo .shounen {
+    grid-area: shounen; }
+  .containerCatalogo .shoujo {
+    grid-area: shoujo; }
+  .containerCatalogo .seinen {
+    grid-area: seinen; }
+  .containerCatalogo .josei {
+    grid-area: josei; }
+  .containerCatalogo .spokon {
+    grid-area: spokon; }
+  .containerCatalogo .mecha {
+    grid-area: mecha; }
+  .containerCatalogo .isekai {
+    grid-area: isekai; }
+  .containerCatalogo .footer {
+    grid-area: footer; }
+
+.footer {
+  background-color: crimson; }
+  .footer p {
+    text-align: center;
+    margin: 15px;
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: large;
+    color: black; }
+
+.music {
+  display: flex;
+  justify-content: left;
+  margin: 15px;
+  padding: 20px; }
+
+.subir {
+  display: none; }
+
+.containerContacto {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header header header" "form form form" "footer footer footer"; }
+  .containerContacto .header {
+    grid-area: header; }
+  .containerContacto .form {
+    grid-area: form; }
+  .containerContacto .footer {
+    grid-area: footer; }
+
+form {
+  display: inline-block;
+  justify-content: center;
+  margin: 15px; }
+  form .formItem {
+    display: block;
+    margin: 10px;
+    padding: 10px; }
+  form .boton {
+    background-color: #94a4c4;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 25px; }
+
+.label {
+  color: aliceblue; }
+
+.containerMerch {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header header header header" "figuras figuras figuras figuras" "accesorios accesorios accesorios accesorios" "indumentaria indumentaria indumentaria indumentaria" "footer footer footer footer"; }
+  .containerMerch .header {
+    grid-area: header; }
+  .containerMerch .figuras {
+    grid-area: figuras; }
+  .containerMerch .accesorios {
+    grid-area: accesorios; }
+  .containerMerch .indumentaria {
+    grid-area: indumentaria; }
+  .containerMerch .footer {
+    grid-area: footer; }
+
+/* Estilo grid Recomendados */
+.containerRec {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header header header" "section1 section1 section1" "section2 section2 section2" "section3 section3 section3"; }
+  .containerRec .header {
+    grid-area: header; }
+  .containerRec .section1 {
+    grid-area: section1; }
+  .containerRec .section2 {
+    grid-area: section2; }
+  .containerRec .section3 {
+    grid-area: section3; }
+
+.containerRec p {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  color: white;
+  height: 400px; }
+
+.containerRec img {
+  width: 675px;
+  height: 450px;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 10px; }
+
+.recomendacion {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  .recomendacion .texto {
+    margin: 10px;
+    padding: 10px;
+    width: 500px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #221f1f;
+    text-align: justify; }
+
+header {
+  background-image: url(../img/Fondos/banner.jpg); }
+  header a {
+    font-family: 'Ubuntu', sans-serif;
+    color: brown;
+    -webkit-text-stroke: 1px crimson; }
+  header h1 {
+    -webkit-text-stroke: 0.5px white;
+    text-align: center;
+    color: black;
+    padding: 15px;
+    font-family: 'Mochiy Pop P One', sans-serif; }
+  header .navegacion {
+    background-color: black;
+    display: flex;
+    justify-content: center; }
+    header .navegacion .busqueda {
+      font-family: 'Ubuntu', sans-serif;
+      padding: 5px;
+      border-radius: 15px; }
+  header .portada {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    background-color: crimson;
+    border: 2px solid black;
+    padding: 1rem;
+    align-items: center;
+    margin-right: 1px;
+    background: radial-gradient(#FA0034, #1636F8); }
+    header .portada .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 2px solid black;
+      padding: 2px; }
+  header li {
+    display: inline-block;
+    justify-content: space-between;
+    margin: 15px 15px;
+    background-color: black; }
+    header li a {
+      text-decoration: none;
+      padding: 5px; }
+      header li a:hover {
+        background-color: darkgray;
+        border-radius: 10px; }
+
+body {
+  background-image: url(../img/Fondos/train.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: dimgray;
+  line-height: 1; }
+  body .fotos {
+    display: flex;
+    margin: 1rem;
+    justify-content: center; }
+    body .fotos .carousel .slide {
+      display: flex;
+      justify-content: center; }
+
+.containerIndex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header header header header header" "fotos fotos fotos fotos fotos" "masVendidos masVendidos masVendidos masVendidos masVendidos" "ofertas ofertas ofertas ofertas ofertas" "footer footer footer footer footer"; }
+  .containerIndex .header {
+    grid-area: header; }
+  .containerIndex .fotos {
+    grid-area: fotos; }
+  .containerIndex .masVendidos {
+    grid-area: masVendidos; }
+  .containerIndex .ofertas {
+    grid-area: ofertas; }
+  .containerIndex .footer {
+    grid-area: footer; }
+
+h3 {
+  text-align: center;
+  border: 2px solid black;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  background-color: crimson;
+  margin: 30px;
+  padding: 15px;
+  border-radius: 35px;
+  color: black;
+  -webkit-text-stroke: 0.5px white;
+  background: radial-gradient(#FA0034, #1636F8); }
+
+.listaVendidos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .listaVendidos button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 15px; }
+
+.covers {
+  display: flex;
+  justify-content: center; }
+
+.listaCovers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 10px;
+  flex-wrap: wrap; }
+  .listaCovers div {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 190px;
+    height: 330px;
+    padding: 15px;
+    margin: 10px; }
+  .listaCovers img {
+    width: 150px;
+    height: 200px;
+    align-self: center; }
+
+.card {
+  background-color: darkgrey;
+  text-align: center;
+  border: 2px solid gray;
+  border-radius: 15px; }
+  .card:hover {
+    transform: scale(1.1); }
+  .card p {
+    padding: 5px; }
+  .card button {
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-family: "Ubuntu", sans-serif;
+    padding: 5px; }
+
+.listaOfertas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.footer {
+  background-color: crimson; }
+  .footer .saludo {
+    text-align: center;
+    margin: 15px;
+    padding: 20px; }
+    .footer .saludo p {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: large;
+      color: black; }
+  .footer .music {
+    display: flex;
+    justify-content: left;
+    margin: 15px;
+    padding: 20px; }
+  .footer .subir {
+    display: none; }
+
+h1, .logo {
+  animation-duration: 3s;
+  animation-name: aparicion; }
+
+@keyframes aparicion {
+  from {
+    margin-left: 100%;
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden; }
+  to {
+    margin-left: 0%;
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden; } }
+
+.logo {
+  animation-duration: 3s;
+  animation-name: rodar; }
+
+@keyframes rodar {
+  0% {
+    transform: rotate(90deg); }
+  25% {
+    transform: rotate(180deg); }
+  50% {
+    transform: rotate(270deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@media (max-width: 500px) {
+  .footer .subir {
+    display: block;
+    position: fixed;
+    right: 0px;
+    bottom: 0px; }
+    .footer .subir img {
+      width: 50px;
+      height: 50px;
+      background-color: crimson;
+      border-radius: 50%;
+      background: radial-gradient(#FA0034, #1636F8); }
+  .footer .music {
+    display: none; } }

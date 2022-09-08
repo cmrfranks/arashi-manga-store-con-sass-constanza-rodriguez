@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//Variables
+
+// Fuentes
+    @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Teko:wght@300;400&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+    
+
+//Estilos de las otras paginas
+@import './components/variables';
+@import'./components/catalogo.scss';
+@import'./components/contacto.scss';
+@import'./components/merch.scss';
+@import'./components/recomendados.scss';
+
+//Estilo del header para todas las pages 
+
+header{
+  background-image: url(../img/Fondos/banner.jpg);
+    a{
+    font-family: 'Ubuntu', sans-serif;
+    color:brown;
+    -webkit-text-stroke: 1px crimson;
+    } 
+    h1{
+        -webkit-text-stroke: 0.5px white;
+        text-align: center;
+        color: black;
+        padding: 15px;
+        font-family: 'Mochiy Pop P One', sans-serif; 
+     }
+    .navegacion{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        .busqueda{
+        font-family: 'Ubuntu', sans-serif;
+        padding: 5px;
+        border-radius: 15px;
+        }
+    }
+    .portada{
+        display: flex;
+        justify-content:center;
+        margin-top: 10rem;
+        background-color: crimson;
+        border: 2px solid black;
+        padding: 1rem;
+        align-items: center;
+        margin-right: 1px;
+        @include degrade;
+        .logo{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid black;
+            padding: 2px;
+        }
+    }
+    li{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 15px 15px;
+        background-color: black;
+        a{
+        text-decoration: none;
+        padding: 5px;
+        &:hover{
+        background-color: darkgray;
+        border-radius: 10px;
+            }
+        }
+    }
+}
+
+//Estilo del body
+
+body{
+    background-image: url(../img/Fondos/train.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: dimgray;
+    line-height: 1;
+    .fotos{
+        display: flex;
+        margin: 1rem;
+        justify-content: center;
+        .carousel .slide{
+            display: flex;
+            justify-content: center;
+        } 
+    } 
+}
+
+//Grid del index
+
+.containerIndex {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+     "header header header header header"
+     "fotos fotos fotos fotos fotos"
+     "masVendidos masVendidos masVendidos masVendidos masVendidos"
+     "ofertas ofertas ofertas ofertas ofertas"
+     "footer footer footer footer footer";
+    
+     .header { grid-area: header; }
+
+    .fotos { grid-area: fotos;}
+  
+    .masVendidos { grid-area: masVendidos; }
+  
+    .ofertas { grid-area: ofertas; }
+  
+    .footer { grid-area: footer; }
+  }
+  
+  //Títulos 
+
+  h3 {
+    text-align: center;
+    border: 2px solid black;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    background-color:crimson;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 35px;
+    color: black;
+    -webkit-text-stroke: 0.5px white;
+    @include degrade;
+}
+
+//Secciones
+
+.listaVendidos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    }
+}
+
+.covers{
+    display: flex;
+    justify-content: center;
+}
+
+.listaCovers{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    div{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 190px;
+        height: 330px;
+        padding: 15px;
+        margin: 10px;
+    }
+    img{
+        width: 150px;
+        height: 200px;
+        align-self: center;
+    }
+}
+
+.card {
+    background-color: darkgrey;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 15px;
+    &:hover{
+        transform: scale(1.1);
+    }
+    p{
+        padding: 5px;
+    }
+    button{
+        border: 1px solid gray;
+        border-radius: 10px;
+        font-family: "Ubuntu", sans-serif;
+        padding: 5px;
+    }
+}
+
+.listaOfertas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+//Estilo del footer
+
+.footer{
+    background-color: crimson;
+    .saludo{
+    text-align: center;
+    margin: 15px;
+    padding: 20px;
+    p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: large;
+    color: black;
+    }
+  } 
+    .music{
+        display: flex;
+        justify-content: left;
+        margin: 15px;
+        padding: 20px;
+        }
+    .subir{
+        display: none;
+    }
+}
+
+// ANIMACIONES 
+
+h1, .logo{
+    animation-duration: 3s;
+    animation-name: aparicion;
+  }
+
+  @keyframes aparicion{
+    from{
+        margin-left: 100%;
+        width: auto;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    to{
+        margin-left: 0%;
+        width: auto;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+  }
+ 
+  .logo{
+    animation-duration: 3s;
+    animation-name: rodar;
+  }
+ 
+  @keyframes rodar {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    25%{
+        transform: rotate(180deg);
+    }
+
+    50%{
+        transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}  
+ 
+// MEDIA QUERIES 
+
+// Flecha para subir 
+
+@media(max-width: 500px){
+
+    .footer{
+        .subir{
+        display: block;
+        position: fixed; 
+        right: 0px;
+        bottom: 0px;
+        img{
+        width: 50px;
+        height: 50px;
+        background-color: crimson;
+        border-radius: 50%;
+        @include degrade;
+        }
+      } 
+      .music{
+        display: none;
+        }
+    }
+}
+
+
+
+
+
+
+
