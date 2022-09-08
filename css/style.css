@@ -74,7 +74,28 @@
   padding: 20px; }
 
 .subir {
-  display: none; }
+  display: block;
+  position: fixed;
+  right: 0px;
+  bottom: 0px; }
+  .subir img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(#FA0034, #1636F8); }
+
+@media (max-width: 500px) {
+  .subir {
+    display: block;
+    position: fixed;
+    right: 0px;
+    bottom: 0px; }
+    .subir img {
+      width: 50px;
+      height: 50px;
+      background-color: crimson;
+      border-radius: 50%;
+      background: radial-gradient(#FA0034, #1636F8); } }
 
 .containerContacto {
   display: grid;
@@ -333,7 +354,15 @@ h3 {
     margin: 15px;
     padding: 20px; }
   .footer .subir {
-    display: none; }
+    display: block;
+    position: fixed;
+    right: 0px;
+    bottom: 0px; }
+    .footer .subir img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: radial-gradient(#FA0034, #1636F8); }
 
 h1, .logo {
   animation-duration: 3s;

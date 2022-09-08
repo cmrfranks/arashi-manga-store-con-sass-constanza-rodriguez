@@ -1,0 +1,11 @@
+#Transformé todo el CSS de las páginas en SASS.
+
+#Añadí keywords y descripciones a cada página. Varias de las keywords se repiten entre páginas, pero 
+me parecían relevantes para todas ellas.
+
+#Cambié el fondo y generé un degradado para utilizar mixins. 
+
+#Arreglé la animación. 
+
+#Dejé visible la flecha para subir en el inicio y el catálogo en la versión de escritorio. 
+

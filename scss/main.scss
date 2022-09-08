@@ -227,10 +227,19 @@ body{
         margin: 15px;
         padding: 20px;
         }
-    .subir{
-        display: none;
+    .subir{   
+        display: block;
+        position: fixed; 
+        right: 0px;
+        bottom: 0px;
+        img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        @include degrade;
+            }
+        }
     }
-}
 
 // ANIMACIONES 
 
