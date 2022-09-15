@@ -1,15 +1,14 @@
-//Estilo grid recomendados
-
 /* Estilo grid Recomendados */
 
 .containerRec {  display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto ;
     grid-template-areas:
       "header header header"
       "section1 section1 section1"
       "section2 section2 section2"
-      "section3 section3 section3";
+      "section3 section3 section3"
+      "footer footer footer";
 
       .header { grid-area: header; }
   
@@ -18,7 +17,9 @@
       .section2 { grid-area: section2; }
       
       .section3 { grid-area: section3; }
-  }
+
+      .footer { grid-area: footer;}
+
   
   .containerRec {
     p{
@@ -32,7 +33,6 @@
         height: 450px;
         border: 2px solid black;
         border-radius: 15px;
-        margin: 10px;
       }
 }
 
@@ -48,9 +48,17 @@
         border: 1px solid black;
         border-radius: 15px;
         background-color: rgb(34, 31, 31);
+        color: aliceblue;
         text-align: justify;
-      }
+      } 
+      img{
+          width: 675px;
+          height: 450px;
+          border: 2px solid black;
+          border-radius: 15px;
+          margin: 10px;
+        }
   }
-  
- 
+}
+
 

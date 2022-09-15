@@ -131,9 +131,6 @@ form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto;
-  grid-auto-columns: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
   grid-template-areas: "header header header header" "figuras figuras figuras figuras" "accesorios accesorios accesorios accesorios" "indumentaria indumentaria indumentaria indumentaria" "footer footer footer footer"; }
   .containerMerch .header {
     grid-area: header; }
@@ -150,8 +147,8 @@ form {
 .containerRec {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "header header header" "section1 section1 section1" "section2 section2 section2" "section3 section3 section3"; }
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header header header" "section1 section1 section1" "section2 section2 section2" "section3 section3 section3" "footer footer footer"; }
   .containerRec .header {
     grid-area: header; }
   .containerRec .section1 {
@@ -160,33 +157,66 @@ form {
     grid-area: section2; }
   .containerRec .section3 {
     grid-area: section3; }
+  .containerRec .footer {
+    grid-area: footer; }
+  .containerRec .containerRec p {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: white;
+    height: 400px; }
+  .containerRec .containerRec img {
+    width: 675px;
+    height: 450px;
+    border: 2px solid black;
+    border-radius: 15px; }
+  .containerRec .recomendacion {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    .containerRec .recomendacion .texto {
+      margin: 10px;
+      padding: 10px;
+      width: 500px;
+      height: 450px;
+      border: 1px solid black;
+      border-radius: 15px;
+      background-color: #221f1f;
+      color: aliceblue;
+      text-align: justify; }
+    .containerRec .recomendacion img {
+      width: 675px;
+      height: 450px;
+      border: 2px solid black;
+      border-radius: 15px;
+      margin: 10px; }
 
-.containerRec p {
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
-  color: white;
-  height: 400px; }
-
-.containerRec img {
-  width: 675px;
-  height: 450px;
-  border: 2px solid black;
-  border-radius: 15px;
-  margin: 10px; }
-
-.recomendacion {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap; }
+@media (max-width: 500px) {
+  .footer .subir {
+    display: block;
+    position: fixed;
+    right: 0px;
+    bottom: 0px; }
+    .footer .subir img {
+      width: 50px;
+      height: 50px;
+      background-color: crimson;
+      border-radius: 50%;
+      background: radial-gradient(#FA0034, #1636F8); }
+  .footer .music {
+    display: none; }
   .recomendacion .texto {
     margin: 10px;
     padding: 10px;
-    width: 500px;
-    height: 450px;
+    width: 200px;
+    height: 530px;
     border: 1px solid black;
     border-radius: 15px;
     background-color: #221f1f;
+    color: aliceblue;
     text-align: justify; }
+  .recomendacion img {
+    width: 200px;
+    height: 150px; } }
 
 header {
   background-image: url(../img/Fondos/banner.jpg); }
@@ -393,18 +423,3 @@ h1, .logo {
     transform: rotate(270deg); }
   100% {
     transform: rotate(360deg); } }
-
-@media (max-width: 500px) {
-  .footer .subir {
-    display: block;
-    position: fixed;
-    right: 0px;
-    bottom: 0px; }
-    .footer .subir img {
-      width: 50px;
-      height: 50px;
-      background-color: crimson;
-      border-radius: 50%;
-      background: radial-gradient(#FA0034, #1636F8); }
-  .footer .music {
-    display: none; } }
