@@ -11,15 +11,12 @@
     
 
 //Estilos de las otras paginas
-@import './components/variables';
+@import './components/variables.scss';
 @import'./components/catalogo.scss';
 @import'./components/contacto.scss';
 @import'./components/merch.scss';
-@import'./components/recomendados';
+@import'./components/recomendados.scss';
 
-//Media queries
-
-@import './components/queries';
 
 //Estilo del header para todas las pages 
 
@@ -47,6 +44,11 @@ header{
         border-radius: 15px;
         }
     }
+
+    .navbar-toggler{
+       @include degrade;
+    }
+    
     .portada{
         display: flex;
         justify-content:center;
@@ -291,7 +293,9 @@ h1, .logo{
     }
 }  
  
+//Media queries
 
+@import './components/queries.scss';
 
 
 
